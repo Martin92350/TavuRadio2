@@ -6,24 +6,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class TavuLactu extends AppCompatActivity {
 
-    private Button TavuLactu ;
+    private Button retour ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tavu);
 
-        this.TavuLactu = (Button) findViewById(R.id.TavuLactu);
+        this.retour = (Button) findViewById(R.id.retour);
 
-        TavuLactu.setOnClickListener(new View.OnClickListener() {
+        retour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent otherActivity = new Intent(getApplicationContext(),TavuLactu.class);
+                Intent otherActivity = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(otherActivity);
                 finish();
             }
         });
+
     }
 }

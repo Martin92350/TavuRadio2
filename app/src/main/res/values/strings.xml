@@ -2,4 +2,6 @@
     <string name="app_name">TavuRadio</string>
     <string name="Tavu_Radio">Tavu  Radio</string>
     <string name="Play">Play</string>
+    <string name="Tavu_Lactu">Tavu Lactu</string>
+    <string name="Return">Return</string>
 </resources>
