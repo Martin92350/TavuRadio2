@@ -2,33 +2,22 @@
   "results":
 [
   {
-    "image": "lien url image",
-    "titre":"titre",
-    "description": "description",
+    "image": ""pecha"",
+    "titre":""https://pokeapi.co/api/v2/berry/3/""
   },
-  
-    {
-    "image": "lien url image",
-    "titre":"titre",
-    "description": "description",
+   {
+    "image": ""pecha"",
+    "titre":""https://pokeapi.co/api/v2/berry/3/""
   },
-  {
-    "image": "lien url image",
-    "titre":"titre",
-    "description": "description",
+   {
+    "image": ""pecha"",
+    "titre":""https://pokeapi.co/api/v2/berry/3/""
   },
-  
-  {
-    "image": "lien url image",
-    "titre":"titre",
-    "description": "description",
-  },
-  
-  {
-    "image": "lien url image",
-    "titre":"titre",
-    "description": "description",
+   {
+    "image": ""pecha"",
+    "titre":""https://pokeapi.co/api/v2/berry/3/""
   }
-
+  
   ]
 }  
+
