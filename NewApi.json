@@ -2,22 +2,22 @@
   "results":
 [
   {
-    "image": ""pecha"",
-    "titre":""https://pokeapi.co/api/v2/berry/3/""
+    "image": "pecha",
+    "titre":"puta",
+    "description":"pute"
   },
-   {
-    "image": ""pecha"",
-    "titre":""https://pokeapi.co/api/v2/berry/3/""
+  {
+    "image": "pecha",
+    "titre":"puta",
+    "description":"pute"
   },
-   {
-    "image": ""pecha"",
-    "titre":""https://pokeapi.co/api/v2/berry/3/""
-  },
-   {
-    "image": ""pecha"",
-    "titre":""https://pokeapi.co/api/v2/berry/3/""
+  {
+    "image": "pecha",
+    "titre":"puta",
+    "description":"pute"
   }
+
+]
   
-  ]
 }  
 
