@@ -2,14 +2,19 @@ package com.esiea.tavuradio;
 
 public class Actu {
 
-    private String name ;
-    private String url ;
+    private String image ;
+    private String titre ;
+    private String description ;
 
-    public String getName() {
-        return name;
+    public String getImage() {
+        return image;
     }
 
-    public String getUrl() {
-        return url;
+    public String getTitre() {
+        return titre;
+    }
+
+    public String getDescription(){
+        return description;
     }
 }

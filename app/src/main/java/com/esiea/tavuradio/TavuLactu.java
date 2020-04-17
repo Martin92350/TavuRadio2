@@ -25,6 +25,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class TavuLactu extends AppCompatActivity {
 
+    private static final String BASE_URL = "https://raw.githubusercontent.com/Martin92350/TavuRadio2/master/";
+
     private Button retour ;
 
     private RecyclerView recyclerView;
@@ -66,7 +68,7 @@ public class TavuLactu extends AppCompatActivity {
         recyclerView.setAdapter(mAdapter);
     }
 
-    private static final String BASE_URL = "https://pokeapi.co/";
+
 
     private void makeApiCall () {
         Gson gson = new GsonBuilder()
@@ -90,19 +92,17 @@ public class TavuLactu extends AppCompatActivity {
                         showList(actuList);
 
                 }else{
-                    showError();
+
+                    Toast.makeText(getApplicationContext(), "API error", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<RestActuResponse> call, Throwable t) {
-                showError();
+
+                Toast.makeText(getApplicationContext(), "network failure", Toast.LENGTH_SHORT).show();
             }
 
-            private void showError() {
-
-                Toast.makeText(getApplicationContext(), "API error", Toast.LENGTH_SHORT).show();
-            }
         });
     }
 }

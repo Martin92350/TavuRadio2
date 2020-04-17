@@ -6,7 +6,7 @@ import retrofit2.http.GET;
 
 public interface ActuApi {
 
-    @GET("api/v2/pokemon")
+    @GET("NewApi.json")
     Call<RestActuResponse> getActuResponse();
 
     //Dans le cas où l'on veut rajouter des infos, plus de précisions dispo sur le serveur en question

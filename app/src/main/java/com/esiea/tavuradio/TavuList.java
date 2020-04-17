@@ -64,7 +64,7 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         final Actu currentActu = values.get(position);
-        holder.txtHeader.setText(currentActu.getName());
+        holder.txtHeader.setText(currentActu.getImage());
         holder.txtHeader.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,7 +72,8 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
             }
         });
 
-        holder.txtFooter.setText(currentActu.getUrl());
+        holder.txtFooter.setText(currentActu.getTitre());
+        holder.txtFooter.setText(currentActu.getDescription());
     }
 
     // Return the size of your dataset (invoked by the layout manager)
