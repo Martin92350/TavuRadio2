@@ -5,6 +5,7 @@ public class Actu {
     //private String image ;
     private String titre ;
     private String description ;
+    private Integer dateEtHeure ;
 
    /* public String getImage() {
         return image;
@@ -17,4 +18,6 @@ public class Actu {
     public String getDescription(){
         return description;
     }
+
+    public Integer getDateEtHeure(){return dateEtHeure;}
 }

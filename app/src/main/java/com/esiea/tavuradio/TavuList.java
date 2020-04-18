@@ -19,6 +19,7 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
         // each data item is just a string in this case
          TextView txtHeader;
          TextView txtFooter;
+         TextView txtFronter;
          View layout;
 
          ViewHolder(View v) {
@@ -26,6 +27,7 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
             layout = v;
             txtHeader = (TextView) v.findViewById(R.id.firstLine);
             txtFooter = (TextView) v.findViewById(R.id.secondLine);
+            txtFronter =(TextView) v.findViewById(R.id.dateetheure);
         }
     }
 
@@ -74,6 +76,7 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
 
 
         holder.txtFooter.setText(currentActu.getDescription());
+        holder.txtFronter.setText(currentActu.getDateEtHeure());
     }
 
     // Return the size of your dataset (invoked by the layout manager)
