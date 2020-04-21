@@ -1,15 +1,18 @@
 package com.esiea.tavuradio;
 
+import android.graphics.Bitmap;
+
+import java.net.URL;
+
 public class Actu {
 
-    //private String image ;
-    private String titre ;
-    private String description ;
-    private Integer dateEtHeure ;
+    private String titre ="" ;
+    private String description="" ;
+    private String dateEtHeure = "" ;
+    private String imageUrl ="" ;
 
-   /* public String getImage() {
-        return image;
-    }*/
+
+    public String getImageUrl() { return imageUrl; }
 
     public String getTitre() {
         return titre;
@@ -19,5 +22,5 @@ public class Actu {
         return description;
     }
 
-    public Integer getDateEtHeure(){return dateEtHeure;}
+    public String getDateEtHeure() { return dateEtHeure; }
 }

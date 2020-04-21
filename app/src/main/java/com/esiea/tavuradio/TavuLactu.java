@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,6 +58,8 @@ public class TavuLactu extends AppCompatActivity {
     private void showList(List<Actu>actuList) {
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+
+
 
         recyclerView.setHasFixedSize(true);
 

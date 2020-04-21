@@ -1,16 +1,46 @@
 package com.esiea.tavuradio;
 
+import android.app.DownloadManager;
+import android.content.Context;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import java.io.InputStream;
 
+
+import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.util.List;
 
 public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
     private List<Actu> values;
+    private Context mContext ;
+    RequestOptions option ;
+
+    public TavuList (Context mContext, List<Actu> values){
+        this.mContext = mContext  ;
+        this.values = values ;
+
+        option = new RequestOptions().centerCrop().placeholder(R.drawable.loading_shape).error(R.drawable.loading_shape);
+    }
+
+
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -19,7 +49,8 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
         // each data item is just a string in this case
          TextView txtHeader;
          TextView txtFooter;
-         TextView txtFronter;
+         TextView txtOnTheSide;
+         ImageView imgUrl ;
          View layout;
 
          ViewHolder(View v) {
@@ -27,8 +58,11 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
             layout = v;
             txtHeader = (TextView) v.findViewById(R.id.firstLine);
             txtFooter = (TextView) v.findViewById(R.id.secondLine);
-            txtFronter =(TextView) v.findViewById(R.id.dateetheure);
-        }
+            txtOnTheSide =(TextView) v.findViewById(R.id.dateEtHeure);
+            imgUrl = (ImageView) v.findViewById(R.id.icon) ;
+
+
+         }
     }
 
     public void add(int position, Actu item) {
@@ -61,11 +95,16 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
     }
 
     // Replace the contents of a view (invoked by the layout manager)
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         final Actu currentActu = values.get(position);
+
+        holder.txtOnTheSide.setText(currentActu.getDateEtHeure());
+
+
         holder.txtHeader.setText(currentActu.getTitre());
         holder.txtHeader.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,9 +113,11 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
             }
         });
 
-
         holder.txtFooter.setText(currentActu.getDescription());
-        holder.txtFronter.setText(currentActu.getDateEtHeure());
+
+        Glide.with(mContext).load(values.get(position).getImageUrl()).apply(option).into(holder.imgUrl);
+
+
     }
 
     // Return the size of your dataset (invoked by the layout manager)
