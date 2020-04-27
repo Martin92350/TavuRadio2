@@ -6,10 +6,13 @@ import java.net.URL;
 
 public class Actu {
 
-    private String titre ="" ;
-    private String description="" ;
-    private String dateEtHeure = "" ;
-    private String imageUrl ="" ;
+    private String titre = ""  ;
+    private String description ="" ;
+    private String dateEtHeure = "";
+    private String imageUrl = "";
+
+    public Actu() {
+    }
 
 
     public String getImageUrl() { return imageUrl; }
@@ -23,4 +26,7 @@ public class Actu {
     }
 
     public String getDateEtHeure() { return dateEtHeure; }
+
+
 }
+

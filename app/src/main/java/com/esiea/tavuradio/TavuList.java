@@ -1,5 +1,6 @@
 package com.esiea.tavuradio;
 
+
 import android.app.DownloadManager;
 import android.content.Context;
 import android.os.Build;
@@ -21,24 +22,18 @@ import java.io.InputStream;
 
 
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
     private List<Actu> values;
-    private Context mContext ;
-    RequestOptions option ;
-
-    public TavuList (Context mContext, List<Actu> values){
-        this.mContext = mContext  ;
-        this.values = values ;
-
-        option = new RequestOptions().centerCrop().placeholder(R.drawable.loading_shape).error(R.drawable.loading_shape);
-    }
+    
 
 
 
@@ -60,6 +55,8 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
             txtFooter = (TextView) v.findViewById(R.id.secondLine);
             txtOnTheSide =(TextView) v.findViewById(R.id.dateEtHeure);
             imgUrl = (ImageView) v.findViewById(R.id.icon) ;
+
+
 
 
          }
@@ -85,10 +82,8 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
     public TavuList.ViewHolder onCreateViewHolder(ViewGroup parent,
                                                    int viewType) {
         // create a new view
-        LayoutInflater inflater = LayoutInflater.from(
-                parent.getContext());
-        View v =
-                inflater.inflate(R.layout.row_layout, parent, false);
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View v = inflater.inflate(R.layout.row_layout, parent, false);
         // set the view's size, margins, paddings and layout parameters
         ViewHolder vh = new ViewHolder(v);
         return vh;
@@ -115,7 +110,9 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
 
         holder.txtFooter.setText(currentActu.getDescription());
 
-        Glide.with(mContext).load(values.get(position).getImageUrl()).apply(option).into(holder.imgUrl);
+        Glide.with(holder.itemView.getContext()).load(currentActu.getImageUrl()).into(holder.imgUrl);
+
+
 
 
     }

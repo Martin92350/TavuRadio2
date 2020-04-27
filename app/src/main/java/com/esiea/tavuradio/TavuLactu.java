@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -13,8 +14,13 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,11 +35,11 @@ public class TavuLactu extends AppCompatActivity {
 
     private static final String BASE_URL = "https://raw.githubusercontent.com/Martin92350/TavuRadio2/master/";
 
-    private Button retour ;
 
     private RecyclerView recyclerView;
     private TavuList mAdapter;
     private RecyclerView.LayoutManager layoutManager;
+    private Button retour ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,14 +92,17 @@ public class TavuLactu extends AppCompatActivity {
 
         ActuApi actuApi = retrofit.create(ActuApi.class);
 
+
         Call<RestActuResponse> call = actuApi.getActuResponse();
         call.enqueue(new Callback<RestActuResponse>() {
             @Override
             public void onResponse(Call<RestActuResponse> call, Response<RestActuResponse> response) {
+
+
                 if(response.isSuccessful()&&response.body() != null){
 
-                        List<Actu> actuList = response.body().getResults();
-                        showList(actuList);
+                    List<Actu> actuList = response.body().getResults();
+                    showList(actuList);
 
                 }else{
 

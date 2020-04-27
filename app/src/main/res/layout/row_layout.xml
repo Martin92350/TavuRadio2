@@ -24,7 +24,6 @@
         android:layout_marginBottom="0dp"
         android:layout_toRightOf="@id/dateEtHeure"
         android:contentDescription="TODO"
-        android:src="@mipmap/ic_launcher"
         android:background="@drawable/loading_shape" />
 
     <TextView
