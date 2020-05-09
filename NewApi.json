@@ -1,32 +1,266 @@
 {
-  "results":
-[
-  {
-    "titre":"Info Exclu!",
-    "description":"c un truc de fou ce qui se passe",
-    "dateEtHeure":"12h57,  12/04",
-    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwAoF2VNLIkqDfxkJR0PU5tS1rbz-PSeaeE-x2w8DslHP5vzp1&usqp=CAU"
-  },
-  {
-    "titre":"Info Exclu!",
-    "description":"c un truc de fou ce qui se passe",
-    "dateEtHeure":"12h57,  12/04",
-    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwAoF2VNLIkqDfxkJR0PU5tS1rbz-PSeaeE-x2w8DslHP5vzp1&usqp=CAU"
-  },
-  {
-    "titre":"Info Exclu!",
-    "description":"c un truc de fou ce qui se passe",
-    "dateEtHeure":"12h57,  12/04",
-    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwAoF2VNLIkqDfxkJR0PU5tS1rbz-PSeaeE-x2w8DslHP5vzp1&usqp=CAU"
-  },
-  {
-    "titre":"Info Exclu!",
-    "description":"c un truc de fou ce qui se passe",
-    "dateEtHeure":"12h57,  12/04",
-    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwAoF2VNLIkqDfxkJR0PU5tS1rbz-PSeaeE-x2w8DslHP5vzp1&usqp=CAU"
-  }
-   
+"status": "ok",
+"totalResults": 70,
+-"articles": [
+-{
+-"source": {
+"id": null,
+"name": "Closermag.fr"
+},
+"author": "Mélody Husson Garnier",
+"title": "Le prince Harry et Meghan Markle exfiltrés du Canada dans un avion privé à 130 millions d'euros - Closer France",
+"description": "Le prince Harry et Meghan Markle ont célébré le premier anniversaire d’Archie à Beverly Hills, le quartier huppé de Los Angeles, aux États-Unis. Un voyage effectué grâce au jet privé d’un ami, qui vaut 130 millions d’euros.",
+"url": "https://www.closermag.fr/royautes/le-prince-harry-et-meghan-markle-exfiltres-du-canada-dans-un-avion-prive-a-130-m-1110458",
+"urlToImage": "https://file1.closermag.fr/var/closermag/storage/images/1/3/0/8/5/13085149/le-prince-harry-meghan-markle-exfiltres-canada-dans-avion-prive-130-millions-euros.jpg?alias=exact1024x768_l",
+"publishedAt": "2020-05-09T07:56:18Z",
+"content": "Ce 6 mai dernier était une date importante pour le prince Harry et Meghan Markle. Et pour cause, le couple a célébré le tout premier anniversaire de leur fils Archie. Pour l'occasion, la famille a organisé une fête dans une grande maison située dans le très h… [+1778 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Ldpeople.com"
+},
+"author": null,
+"title": "Laurent Ruquier son état de santé au plus mal, il s'exprime sur la maladie - LDpeople.com",
+"description": "Laurent Ruquier avoue avoir un problème de santé très important. Les médecins ont annoncé à l'animateur de 57 ans qu'il souffrait...",
+"url": "https://www.ldpeople.com/laurent-ruquier-etat-sante-plus-mal-exprime-maladie-65341/",
+"urlToImage": "https://www.ldpeople.com/wp-content/uploads/2020/05/laurent-ruquier-etat-sante-plus-mal-exprime-maladie.jpg",
+"publishedAt": "2020-05-09T07:48:15Z",
+"content": "Laurent Ruquier avoue avoir un problème de santé très important. Les médecins ont annoncé à l’animateur de 57 ans qu’il souffrait d’une maladie cardiaque et devait dès lors, changer sa façon de vivre de manière radicale.\r\nLaurent Ruquier: Un virage à 180 degr… [+6248 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Melty.fr"
+},
+"author": "",
+"title": "Rym (La Villa 5) clashée par Booba, elle réagit et tacle le rappeur - melty",
+"description": "Après avoir été clashée par Booba, Rym a réagi et a taclé le rappeur. On vous dévoile tout dans cet article.",
+"url": "https://www.melty.fr/rym-la-villa-5-clashee-par-booba-elle-reagit-et-tacle-le-rappeur-a718889.html",
+"urlToImage": "https://media.melty.fr/article-4144196-facebook-f10/rym-la-villa-des-coeurs-brises-5-booba.jpg",
+"publishedAt": "2020-05-09T07:32:26Z",
+"content": "Alors que l'on sait désormais si Vincent Queijo est en guerre avec une candidate emblématique de La Villa des Coeurs Brisés 5, Rym a dernièrement été taclée par Booba, un rappeur français. Après avoir surfé sur les réseaux sociaux, ce dernier est tombé sur un… [+1489 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Www.rtl.fr"
+},
+"author": null,
+"title": "Des journées fatiguantes, fatigantes… ou fatiguant ? - RTL.fr",
+"description": "Muriel Gilbert nous aide à distinguer entre les triplés participe présent, gérondif et adjectif verbal.",
+"url": "https://www.rtl.fr/culture/arts-spectacles/des-journees-fatiguantes-fatigantes-ou-fatiguant-7800471198",
+"urlToImage": "https://cdn-media.rtl.fr/cache/43GUhJVxvxPW4js1xkauNw/2000v1333-0/online/image/2019/0609/7797803710_un-dictionnaire-francais-illustration.jpg",
+"publishedAt": "2020-05-09T07:12:00Z",
+"content": "Flavio, 9 ans, et sa maman Gianna mont appelée au secours. Ils sont embrouillés par trois types de mots qui se ressemblent comme des frères. Ces triplés sappellent gérondif, participe présent et adjectif verbal. Ils se terminent tous par A.N.T. \r\nLe gérondif,… [+2602 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Ozap.com"
+},
+"author": "Kevin Boucher",
+"title": "Audiences : \"Koh-Lanta\" large leader en baisse, déception pour \"Un jour, un destin\", Arte cartonne en rediffusion - Ozap",
+"description": "Les audiences de la soirée du vendredi 8 mai 2020.",
+"url": "https://www.ozap.com/actu/audiences-koh-lanta-large-leader-en-baisse-deception-pour-un-jour-un-destin-arte-cartonne-en-rediffusion/592729",
+"urlToImage": "https://static1.ozap.com/articles/9/59/27/29/@/4633177-laurent-delahousse-dans-un-jour-un-des-opengraph_1200-1.jpg",
+"publishedAt": "2020-05-09T07:07:11Z",
+"content": "Vendredi soir, TF1 s'est hissée en tête des audiences avec la suite de la saison 21 de son jeu d'aventure \"Koh-Lanta\", animé par Denis Brogniart et produit par Adventure Line Productions. Ce onzième épisode de la compétition a réuni 6,57 millions de fidèles j… [+2123 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Jeuxvideo.com"
+},
+"author": null,
+"title": "Chronique vidéo Star Wars Jedi Fallen Order 2 : Une suite du côté obscur ? - jeuxvideo.com - jeuxvideo.com",
+"description": "May the 4th est passé, et Jedi Fallen Order vient de se doter d’un New Game Plus. L’occasion idéale de se poser et de réfléchir à ce qu’une suite de l’épisode développé par Respawn pourrait donner. Il y a déjà pas mal de pistes intéressantes à creuser, que l’…",
+"url": "http://www.jeuxvideo.com/videos/chroniques/1221614/star-wars-jedi-fallen-order-2-une-suite-du-cote-obscur.htm",
+"urlToImage": "http://image.jeuxvideo.com/images/videos/chroniques-images/a/v/avance-rapide-star-wars-jedi-fallen-order-2-1139913-1588761858-high.jpg",
+"publishedAt": "2020-05-09T07:00:02Z",
+"content": "May the 4th est passé, et Jedi Fallen Order vient de se doter d’un New Game Plus. L’occasion idéale de se poser et de réfléchir à ce qu’une suite de l’épisode développé par Respawn pourrait donner. Il y a déjà pas mal de pistes intéressantes à creuser, que l’… [+5865 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Stars-actu.fr"
+},
+"author": "Christophe M.",
+"title": "« Les 12 coups de midi » : Éric serein et reposé, Jean-Luc Reichmann en pleine réflexion ! - Stars Actu",
+"description": "4.1 (58) ANNONCES « Les 12 coups de midi ». Comme annoncé c’est donc ce lundi 11 mai 2020 qu’Éric",
+"url": "https://www.stars-actu.fr/2020/05/les-12-coups-de-midi-eric-serein-et-repose-jean-luc-reichmann-en-pleine-reflexion/",
+"urlToImage": "https://www.stars-actu.fr/wp-content/uploads/2020/01/Eric-12coups.jpg",
+"publishedAt": "2020-05-09T06:23:00Z",
+"content": "« Les 12 coups de midi ». Comme annoncé c’est donc ce lundi 11 mai 2020 qu’Éric reprendra le chemin des plateaux de tournage du jeu quotidien de TF1 « Les 12 coups de midi ». Et oui le plus grand champion en terme de gains –  il devance désormais Christian Qu… [+3132 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Purepeople.com"
+},
+"author": "Emma Vanpoulle",
+"title": "Jessica (Koh-Lanta) éliminée : \"La stratégie de Régis était contre moi\" (EXCLU) - Pure People",
+"description": "À l'issue du dernier épisode de \"Koh-Lanta\", c'est finalement Jessica qui a été éliminée ! La jeune femme s'est vue trahie par Régis une deuxième fois. Pour \"Purepeople.com\", elle fait le bilan de son aventure.",
+"url": "https://www.purepeople.com/article/jessica-koh-lanta-eliminee-la-strategie-de-regis-etait-contre-moi-exclu_a387380/1",
+"urlToImage": "https://static1.purepeople.com/articles/0/38/73/80/@/5575412-jessica-candidate-de-koh-lanta-2020-opengraph_1200-3.jpg",
+"publishedAt": "2020-05-09T06:12:00Z",
+"content": "Les jeux étaient une nouvelle fois serrés lors du Conseil de Koh-Lanta, vendredi 8 mai 2020. Et c'est finalement Jessica qui a été éliminée ! La jeune femme a été trahie par Régis alors que ce dernier s'était allié à elle pour faire tomber Alexandra. Jessica,… [+7207 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Allocine.fr"
+},
+"author": "Thibaud Gomes-Léal / Thomas Imbert",
+"title": "Star Wars : 7 clins d’œil cachés dans L'Empire contre-attaque - AlloCiné",
+"description": "Avez-vous remarqué ces détails glissés dans \"Star Wars Episode V : L'Empire contre-attaque\", disponible en SVOD sur la plate-forme Disney+ ?",
+"url": "http://www.allocine.fr/diaporamas/cinema/diaporama-18689835/",
+"urlToImage": "http://fr.web.img6.acsta.net/newsv7/20/05/05/16/55/3846825.jpg",
+"publishedAt": "2020-05-09T06:00:00Z",
+"content": "Contact|Qui sommes-nous| Recrutement|Publicité|CGU|Politique de cookies|Données Personnelles|Revue de presse|Jeux concours|\r\n ©AlloCiné\r\nRetrouvez tous les horaires et infos de votre cinéma sur le numéro AlloCiné : 0 892 892 892 (0,34/minute)"
+},
+-{
+-"source": {
+"id": null,
+"name": "Ladepeche.fr"
+},
+"author": "Jean-Marie Louis",
+"title": "Enrico Macias touché par le coronavirus : « J'ai eu des douleurs abdominales terribles » - LaDepeche.fr",
+"description": "Le chanteur Enrico Macias affirme avoir été touché par le coronavirus. Aujourd'hui guéri, il a énormément souffert.",
+"url": "https://www.ladepeche.fr/2020/05/08/enrico-macias-touche-par-le-coronavirus-jai-eu-des-douleurs-abdominales-terribles,8879555.php",
+"urlToImage": "https://images.ladepeche.fr/api/v1/images/view/5eb6080d8fe56f1eb83eb51c/large/image.jpg?v=1",
+"publishedAt": "2020-05-09T05:22:20Z",
+"content": "l'essentiel\r\n Le chanteur Enrico Macias affirme avoir été touché par le coronavirus. Aujourd'hui guéri, il a énormément souffert.\r\n Les traits tirés, le visage fatigué, Enrico Macias a révélé avoir été touché par le coronavirus. Il intervenait en visioconfére… [+1721 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "20minutes.fr"
+},
+"author": "Arthur RainBot",
+"title": "Horoscope chinois du Samedi 9 mai 2020 - 20minutes.fr",
+"description": "Découvrez l’horoscope chinois de 20 Minutes du 09/05/2020",
+"url": "https://www.20minutes.fr/horoscope-quotidien-chinois/2770047-20200429-horoscope-chinois-du-samedi-9-mai-2020",
+"urlToImage": "https://img.20mn.fr/ZW1WRq3LQk6ZALfUdK-VQQ/648x360_horoscope-quotidien-chinois.jpg",
+"publishedAt": "2020-05-09T04:05:03Z",
+"content": "Découvrez l'horoscope quotidien chinois DR\r\nEn Amour, une douce entente avec l'être aimé marquera la journée. Vous devrez rester vigilant sur l'évolution de votre relation en continuant les efforts et les compromis. En ce qui concerne l'argent et le travail, … [+7958 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Hitek.fr"
+},
+"author": null,
+"title": "The Mandalorian : Boba Fett arrive dans la deuxième saison et le choix de l'acteur est parfait - Hitek.fr",
+"description": "Voici l'excellente nouvelle qui nous vient d'Hollywood Reporter et qui annonce l'arrivée de Boba Fett dans la seconde saison de The Mandalorian.",
+"url": "https://hitek.fr/actualite/the-mandalorian-boba-fett_22604",
+"urlToImage": "https://static.hitek.fr/img/actualite/ill_m/812785798/bobafettmandalorian.jpg",
+"publishedAt": "2020-05-08T22:24:04Z",
+"content": "Voici une excellente nouvelle qui nous arrive tout droit du site The Holywood Reporter, souvent très fiable dans les exclus ! On y  apprend que Temuera Morrison jouera le rôle de Boba Fett dans la deuxième saison de The Mandalorian !\r\nSi vous n'avez pas encor… [+860 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "20minutes.fr"
+},
+"author": "Philippe Berry",
+"title": "A peine sorti de prison, le rappeur 6ix9ine pulvérise un record Instagram - 20minutes.fr",
+"description": "Condamné à deux ans de réclusion, le rappeur de Brooklyn qui a témoigné contre ses anciens camarades de gang, purge la fin de sa peine à domicile à cause du coronavirus",
+"url": "https://www.20minutes.fr/arts-stars/culture/2775471-20200509-peine-sorti-prison-rappeur-6ix9ine-pulverise-record-instagram",
+"urlToImage": "https://img.20mn.fr/l8jY_JRET02t_255Mgb7lw/648x360_rappeur-6ix9ine-clip-gooba-capture-video.jpg",
+"publishedAt": "2020-05-08T22:05:44Z",
+"content": "Le rappeur 6ix9ine dans son clip «Gooba» (capture vidéo). 6ix9ine/youtube\r\nIl vient de sortir de prison et reste sous la menace de ses anciens camarades de gang, mais plutôt que de faire profil bas, le rappeur new-yorkais Tekashi 6ix9ine a sorti vendredi une … [+2198 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Stars-actu.fr"
+},
+"author": "Bertrand Blanc",
+"title": "Le rappeur britannique Ty est mort des suites du coronavirus - Stars Actu",
+"description": "4.4 (16) ANNONCES Le rappeur britannique Ty est mort des suites de complications médicales liées au coronavirus ! Il n’était",
+"url": "https://www.stars-actu.fr/2020/05/le-rappeur-britannique-ty-est-mort-des-suites-du-coronavirus/",
+"urlToImage": "https://www.stars-actu.fr/wp-content/uploads/2017/06/breaking-news.jpg",
+"publishedAt": "2020-05-08T21:42:00Z",
+"content": "Le rappeur britannique Ty est mort des suites de complications médicales liées au coronavirus ! Il n’était âgé que de 47 ans. Selon le célèbre journal d’information britannique « The Guardian » il avait été hospitalisé après avoir été testé positif au Covid-1… [+1098 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Youtube.com"
+},
+"author": null,
+"title": "8-Mai: l'allocution historique de la reine Élisabeth II - BFMTV",
+"description": "La reine Élisabeth II a tenu un discours ce vendredi à l’occasion du 75e anniversaire de la victoire du 8 mai 1945. Une prise de parole particulière, alors q...",
+"url": "https://www.youtube.com/watch?v=u2GV3ZLWUI8",
+"urlToImage": "https://i.ytimg.com/vi/u2GV3ZLWUI8/maxresdefault.jpg",
+"publishedAt": "2020-05-08T20:36:38Z",
+"content": null
+},
+-{
+-"source": {
+"id": null,
+"name": "Ldpeople.com"
+},
+"author": null,
+"title": "Clara Morgane: sa sœur nous fait totalement oublier le confinement avec ses photos - LDpeople.com",
+"description": "Clara Morgane a en effet une petite sœur. Prénommée Alexandra, elle aussi prend la pose sur des photos sur son compte Instagram. De quoi...",
+"url": "https://www.ldpeople.com/clara-morgane-sa-soeur-nous-fait-totalement-oublier-le-confinement-avec-ses-photos-65334/",
+"urlToImage": "https://www.ldpeople.com/wp-content/uploads/2020/05/clara-morgane-soeur-nous-fait-totalement-oublier-confinement-photos.jpg",
+"publishedAt": "2020-05-08T18:49:15Z",
+"content": "Clara Morgane a en effet une petite sur. Prénommée Alexandra, elle aussi prend la pose sur des photos sur son compte Instagram. De quoi faire le buzz sur la toile tant elle sait se mettre en valeur. Les deux surs ne semblent pas se priver de s’exposer sur int… [+4530 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Yahoo.com"
+},
+"author": null,
+"title": "PHOTOS - Quand Laurence Boccolini épousait Mister Tahiti : ces images rares dans Gala - Yahoo Actualités",
+"description": null,
+"url": "https://consent.yahoo.com/collectConsent?sessionId=1_cc-session_137d9bdd-2425-425f-87ed-32374a546ff7&lang=fr-FR&inline=false",
+"urlToImage": null,
+"publishedAt": "2020-05-08T18:30:00Z",
+"content": "Yahoo fait partie de Verizon Media. Cliquez sur J'accepte afin dautoriser Verizon Media et ses partenaires à utiliser des cookies et des technologies similaires pour accéder à votre appareil, utiliser vos données (y compris votre position géographique), compr… [+596 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Purepeople.com"
+},
+"author": "Atika Nasri",
+"title": "Star Academy truquée ? Une ex-prof sème le doute - Pure People",
+"description": "Une ex-professeur de la \"Star Academy\" s'est confiée sur l'émission. Elle est revenue sur les rumeurs de tricherie et a laissé entendre qu'\"il y avait peut-être des choses\".",
+"url": "https://www.purepeople.com/article/star-academy-truquee-une-ex-prof-seme-le-doute_a387575/1",
+"urlToImage": "https://static1.purepeople.com/articles/5/38/75/75/@/5578100-raphaelle-ricci-salon-du-livre-2010-a-opengraph_1200-1.jpg",
+"publishedAt": "2020-05-08T17:43:00Z",
+"content": "Le 18 février 2020, Georges-Alain Jones, demi-finaliste de la Star Academy2 en 2002, confiait au Parisien que l'émission était truquée. Des propos rapidement contredits par la productrice Alexia-Laroche Joubert, l'ancienne directrice de l'émission Nathalie An… [+1286 chars]"
+},
+-{
+-"source": {
+"id": null,
+"name": "Economiematin.fr"
+},
+"author": "",
+"title": "RESULTAT EUROMILLIONS DU VENDREDI 8MAI 2020: Le nouveau mois de mai commence en grande pompe chez Eu - Economie Matin",
+"description": "RESULTAT EUROMILLIONS DU VENDREDI 8 MAI 2020 : Le nouveau mois de mai commence en grande pompe chez Euromillions avec, pour ce tirage du 8 mai, une belle cagnotte de 56 millions d'euros",
+"url": "http://www.economiematin.fr/news-resultat-euromillions-vendredi-8-mai-2020",
+"urlToImage": "http://www.economiematin.fr/img/thumbs/Images/resultat-tirage-euromillions-vendredi-8-mai-2020-tirage.jpg",
+"publishedAt": "2020-05-08T17:32:47Z",
+"content": null
+},
+-{
+-"source": {
+"id": null,
+"name": "Cnews.fr"
+},
+"author": "CNEWS",
+"title": "«Tu as décidé de partir. Je respecte ta décision» : la très belle lettre d'Amélie Nothomb à son père, mort au début du confinement - CNEWS.fr",
+"description": "L'écrivaine à succès Amélie Nothomb a décidé de partager avec ses fans le dernier message qu'elle a adressé à son père, le diplomate belge Patrick Nothomb, mort le premier jour du confinement, le 17 mars dernier.",
+"url": "https://www.cnews.fr/france/2020-05-08/tu-decide-de-partir-je-respecte-ta-decision-la-tres-belle-lettre-damelie-nothomb",
+"urlToImage": "https://static.cnews.fr/sites/default/files/capture_decran_2020-05-08_a_19.10.37_5eb592c02dfdc.png",
+"publishedAt": "2020-05-08T17:12:00Z",
+"content": "L'écrivaine à succès Amélie Nothomb a décidé de partager avec ses fans le dernier message qu'elle a adressé à son père, le diplomate belge Patrick Nothomb, mort le premier jour du confinement, le 17 mars dernier.\r\nIl s'agit de trois pages, noircies au stylo-b… [+3093 chars]"
+}
 ]
-  
-}  
-
+}
