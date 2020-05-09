@@ -1,10 +1,9 @@
 {
    "status":"ok",
    "totalResults":70,
-   "-"   "articles":[
-      "-"      {},
-      "-"      {
-         "-"         "source":{
+   "articles":[
+      {
+         "source":{
             "id":null,
             "name":"Ldpeople.com"
          },
@@ -16,8 +15,8 @@
          "publishedAt":"2020-05-09T07:48:15Z",
          "content":"Laurent Ruquier avoue avoir un problème de santé très important. Les médecins ont annoncé à l’animateur de 57 ans qu’il souffrait d’une maladie cardiaque et devait dès lors, changer sa façon de vivre de manière radicale.\r\nLaurent Ruquier: Un virage à 180 degr… [+6248 chars]"
       },
-      "-"      {
-         "-"         "source":{
+      {
+         "source":{
             "id":null,
             "name":"Melty.fr"
          },
@@ -28,5 +27,8 @@
          "urlToImage":"https://media.melty.fr/article-4144196-facebook-f10/rym-la-villa-des-coeurs-brises-5-booba.jpg",
          "publishedAt":"2020-05-09T07:32:26Z",
          "content":"Alors que l'on sait désormais si Vincent Queijo est en guerre avec une candidate emblématique de La Villa des Coeurs Brisés 5, Rym a dernièrement été taclée par Booba, un rappeur français. Après avoir surfé sur les réseaux sociaux, ce dernier est tombé sur un… [+1489 chars]"
-      },
+      }
+   ]
+}
+
    
