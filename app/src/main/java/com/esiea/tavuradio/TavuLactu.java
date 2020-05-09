@@ -4,9 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,12 +18,10 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,28 +40,15 @@ public class TavuLactu extends AppCompatActivity {
     private TavuList mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private Button retour ;
-    private SharedPreferences sharedPreferences ;
-    private Gson gson ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tavu);
-         sharedPreferences = getSharedPreferences("application_esiea", Context.MODE_PRIVATE);
+
         this.retour = (Button) findViewById(R.id.retour);
 
-        gson = new GsonBuilder()
-                .setLenient()
-                .create();
-
-        List<Actu> actuList = getDataFromCache() ;
-
-        if(getDataFromCache()!= null){
-            showList(actuList);
-        }else{
-            makeApiCall();
-        }
-
+        makeApiCall();
 
         retour.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,20 +60,6 @@ public class TavuLactu extends AppCompatActivity {
         });
 
     }
-
-    private List<Actu> getDataFromCache() {
-
-        String jsonActu = sharedPreferences.getString("jsonActuList", null);
-
-        if (jsonActu == null) {
-            return null;
-        } else{
-            Type listType = new TypeToken<List<Actu>>() {
-            }.getType();
-        return gson.fromJson(jsonActu, listType);
-        }
-    }
-
 
     private void showList(List<Actu>actuList) {
 
@@ -112,7 +81,9 @@ public class TavuLactu extends AppCompatActivity {
 
 
     private void makeApiCall () {
-
+        Gson gson = new GsonBuilder()
+                .setLenient()
+                .create();
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
@@ -131,7 +102,6 @@ public class TavuLactu extends AppCompatActivity {
                 if(response.isSuccessful()&&response.body() != null){
 
                     List<Actu> actuList = response.body().getResults();
-                    saveList(actuList);
                     showList(actuList);
 
                 }else{
@@ -147,17 +117,5 @@ public class TavuLactu extends AppCompatActivity {
             }
 
         });
-    }
-
-    private void saveList(List<Actu> actuList) {
-
-        String jsonString = gson.toJson(actuList);
-        sharedPreferences
-                .edit()
-                .putString("jsonActuList", jsonString)
-                .apply();
-
-        Toast.makeText(getApplicationContext(), "List saved", Toast.LENGTH_SHORT).show();
-
     }
 }

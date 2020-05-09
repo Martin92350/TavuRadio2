@@ -42,13 +42,13 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
     // you provide access to all the views for a data item in a view holder
     public class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
-         TextView txtHeader;
-         TextView txtFooter;
-         TextView txtOnTheSide;
-         ImageView imgUrl ;
-         View layout;
+        TextView txtHeader;
+        TextView txtFooter;
+        TextView txtOnTheSide;
+        ImageView imgUrl ;
+        View layout;
 
-         ViewHolder(View v) {
+        ViewHolder(View v) {
             super(v);
             layout = v;
             txtHeader = (TextView) v.findViewById(R.id.firstLine);
@@ -59,7 +59,7 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
 
 
 
-         }
+        }
     }
 
     public void add(int position, Actu item) {
@@ -80,7 +80,7 @@ public class TavuList extends RecyclerView.Adapter<TavuList.ViewHolder> {
     // Create new views (invoked by the layout manager)
     @Override
     public TavuList.ViewHolder onCreateViewHolder(ViewGroup parent,
-                                                   int viewType) {
+                                                  int viewType) {
         // create a new view
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View v = inflater.inflate(R.layout.row_layout, parent, false);
