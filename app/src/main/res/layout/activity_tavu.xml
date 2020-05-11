@@ -1,43 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@color/screenBackground"
-    tools:context=".TavuLactu">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:layout_width="416dp"
-        android:layout_height="541dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TavuLactu"
-        app:layout_constraintVertical_bias="0.156" />
+    android:background="#fefefefe"
+    tools:context=".activities.MainActivity">
 
     <TextView
-        android:id="@+id/TavuLactu"
-        android:layout_width="257dp"
-        android:layout_height="100dp"
-        android:fontFamily="@font/rock_salt"
-        android:text="@string/Tavu_Lactu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefefe"
+        android:padding="10dp"
+        android:text="NEWS"
+        android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="612dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white" />
 
     <Button
         android:id="@+id/retour"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="296dp"
-        android:text="@string/Return"
+        android:layout_width="72dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="320dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="#Tavu Radio "
+        android:textColor="@color/screenBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TavuLactu"
-        app:layout_constraintVertical_bias="0.972" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintVertical_bias="0.973" />
+
+
+</LinearLayout>

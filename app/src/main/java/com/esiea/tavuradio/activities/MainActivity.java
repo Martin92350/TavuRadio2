@@ -1,4 +1,4 @@
-package com.esiea.tavuradio;
+package com.esiea.tavuradio.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.esiea.tavuradio.R;
 
 import java.io.IOException;
 
