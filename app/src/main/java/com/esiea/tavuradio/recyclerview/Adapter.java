@@ -16,7 +16,14 @@ import com.esiea.tavuradio.R;
 import com.esiea.tavuradio.model.Articles;
 import com.squareup.picasso.Picasso;
 
+import org.ocpsoft.prettytime.PrettyTime;
+import org.ocpsoft.prettytime.format.SimpleTimeFormat;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
@@ -45,7 +52,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         holder.tvTitle.setText(a.getTitle());
         holder.tvSource.setText(a.getSource().getName());
-        holder.tvDate.setText(a.getPublishedAt());
+        holder.tvDate.setText(dateTime(a.getPublishedAt()));
         Picasso.with(context).load(a.getUrlToImage()).into(holder.imageView);
 
     }
@@ -72,5 +79,24 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
 
         }
+    }
+
+    public String dateTime (String t){
+        PrettyTime prettyTime = new PrettyTime(new Locale(getCountry()));
+        String time = null ;
+        try {
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:", Locale.ENGLISH);
+            Date date = simpleDateFormat.parse(t);
+            time = prettyTime.format(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return time;
+    }
+
+    public String getCountry(){
+        Locale locale = Locale.getDefault();
+        String country = locale.getCountry();
+        return country.toLowerCase() ;
     }
 }

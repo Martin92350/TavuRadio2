@@ -42,8 +42,9 @@ public class TavuLactu extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        String country = getCountry() ;
-        retrieveJson(country,API_KEY);
+        String country = "fr" ;
+        String category ="entertainment";
+        retrieveJson(country,category,API_KEY);
 
         retour.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,9 +56,9 @@ public class TavuLactu extends AppCompatActivity {
         });
     }
 
-    public void retrieveJson(String country, String apiKey){
+    public void retrieveJson(String country,String category, String apiKey){
 
-        Call<Headlines> call = ApiClient.getInstance().getApi().getHeadlines(country, apiKey);
+        Call<Headlines> call = ApiClient.getInstance().getApi().getHeadlines(country, category, apiKey);
         call.enqueue(new Callback<Headlines>() {
             @Override
             public void onResponse(Call<Headlines> call, Response<Headlines> response) {
@@ -78,9 +79,9 @@ public class TavuLactu extends AppCompatActivity {
 
     }
 
-    public String getCountry(){
+    /*public String getCountry(){
         Locale locale = Locale.getDefault();
         String country = locale.getCountry();
         return country.toLowerCase() ;
-    }
+    }*/
 }
