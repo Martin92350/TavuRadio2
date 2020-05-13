@@ -4,39 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/screenBackground"
-    tools:context=".MainActivity">
+    android:background="#fefefefe"
+    tools:context=".activities.MainActivity">
 
 
     <Button
         android:id="@+id/TavuLactu"
-        android:layout_width="399dp"
-        android:layout_height="54dp"
-        android:text="@string/Tavu_Lactu"
+        android:layout_width="72dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="#TAVU L'ACTU"
+        android:textColor="@color/screenBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/LogoTavuRadio"
-        android:layout_width="418dp"
-        android:layout_height="301dp"
-        android:layout_marginTop="84dp"
+        android:layout_width="376dp"
+        android:layout_height="361dp"
+        android:layout_marginTop="96dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tavu_radio_logo" />
 
     <Button
         android:id="@+id/Play"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Play"
+        android:layout_width="65dp"
+        android:layout_height="23dp"
+        android:background="#fefefe"
+        android:paddingRight="20dp"
+        android:text="PLAY"
         app:layout_constraintBottom_toTopOf="@+id/TavuLactu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LogoTavuRadio"
-        app:layout_constraintVertical_bias="0.295" />
+        app:layout_constraintVertical_bias="0.223" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

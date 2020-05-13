@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@color/screenBackground"
-    tools:context=".TavuLactu">
+    android:background="@color/white"
+    tools:context=".activities.MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:layout_width="416dp"
-        android:layout_height="541dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TavuLactu"
-        app:layout_constraintVertical_bias="0.156" />
 
-    <TextView
-        android:id="@+id/TavuLactu"
-        android:layout_width="257dp"
-        android:layout_height="100dp"
-        android:fontFamily="@font/rock_salt"
-        android:text="@string/Tavu_Lactu"
-        android:textColor="#000000"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/retour"
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="296dp"
-        android:text="@string/Return"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TavuLactu"
-        app:layout_constraintVertical_bias="0.972" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/retour"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:text="Button" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="316dp"
+            android:layout_height="35dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="#L ' ACTU"
+            android:fontFamily="@font/alegreya_sc_black"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+    </GridLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="404dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@color/white" />
+
+
+</LinearLayout>
