@@ -26,13 +26,6 @@ public class Articles {
     @Expose
     private String url;
 
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
 
     @SerializedName("urlToImage")
     @Expose
@@ -74,6 +67,14 @@ public class Articles {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public String getUrlToImage() {

@@ -35,7 +35,6 @@
 
     </GridLayout>
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="404dp"

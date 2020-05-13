@@ -9,6 +9,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 
 import com.esiea.tavuradio.R;
 
@@ -16,14 +17,16 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayer ;
+
     private Button TavuLactu ;
     private Button Play ;
-    private MediaPlayer mediaPlayer ;
+    private ProgressBar loading ;
 
     boolean prepared = false ;
     boolean started = false ;
 
-    private String stream =  "https://www.radioking.com/play/tavu-radio";
+    private String stream = "https://www.radioking.com/play/tavu-radio";
 
 
     @Override
@@ -31,10 +34,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.TavuLactu = (Button) findViewById(R.id.TavuLactu);
-        this.Play = (Button) findViewById(R.id.Play);
+        TavuLactu = (Button) findViewById(R.id.TavuLactu);
+        Play = (Button) findViewById(R.id.Play);
+        //loading = findViewById(R.id.loading);
+
+
         Play.setEnabled(false);
         Play.setText("LOADING");
+        //loading.setVisibility(View.VISIBLE);
 
         mediaPlayer = new MediaPlayer() ;
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
@@ -58,10 +65,12 @@ public class MainActivity extends AppCompatActivity {
                     started = false ;
                     mediaPlayer.pause();
                     Play.setText("Play");
+                   // loading.setVisibility(View.INVISIBLE);
                 }else{
                     started = true ;
                     mediaPlayer.start();
                     Play.setText("Pause");
+                   // loading.setVisibility(View.INVISIBLE);
                 }
 
             }

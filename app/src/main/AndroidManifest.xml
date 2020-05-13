@@ -12,7 +12,9 @@
         android:label="Tavu Radio"
         android:roundIcon="@drawable/tavu_radio_logo"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.NewsDetailed"></activity>
         <activity android:name=".activities.HomePage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,9 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.TavuLactu" />
-        <activity android:name=".activities.MainActivity">
-
-        </activity>
+        <activity android:name=".activities.MainActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
