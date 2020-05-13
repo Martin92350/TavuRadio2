@@ -2,6 +2,7 @@ package com.esiea.tavuradio.recyclerview;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.esiea.tavuradio.R;
+import com.esiea.tavuradio.activities.NewsDetailed;
 import com.esiea.tavuradio.model.Articles;
 import com.squareup.picasso.Picasso;
 
@@ -48,12 +50,26 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        Articles a = articles.get(position);
+        final Articles a = articles.get(position);
 
         holder.tvTitle.setText(a.getTitle());
         holder.tvSource.setText(a.getSource().getName());
         holder.tvDate.setText(dateTime(a.getPublishedAt()));
         Picasso.with(context).load(a.getUrlToImage()).into(holder.imageView);
+
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, NewsDetailed.class);
+                intent.putExtra("title",a.getTitle());
+                intent.putExtra("source",a.getSource().getName());
+                intent.putExtra("date",dateTime(a.getPublishedAt()));
+                intent.putExtra("description",a.getDescription());
+                intent.putExtra("image",a.getUrlToImage());
+                intent.putExtra("url",a.getUrl());
+                context.startActivity(intent);
+            }
+        });
 
     }
 
