@@ -35,9 +35,10 @@
     <Button
         android:id="@+id/Play"
         android:layout_width="65dp"
-        android:layout_height="34dp"
+        android:layout_height="23dp"
         android:background="#fefefe"
         android:paddingRight="20dp"
+        android:text="PLAY"
         app:layout_constraintBottom_toTopOf="@+id/TavuLactu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

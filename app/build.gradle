@@ -35,7 +35,7 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:29.3.2'
     implementation "androidx.recyclerview:recyclerview:1.1.0"
 
-    implementation'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:29.3.2'
     //Glide library

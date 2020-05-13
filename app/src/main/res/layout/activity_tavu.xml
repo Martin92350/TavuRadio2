@@ -17,7 +17,7 @@
 
         <Button
             android:id="@+id/retour"
-            android:layout_width="68dp"
+            android:layout_width="50dp"
             android:layout_height="36dp"
             android:text="Button" />
 
@@ -38,8 +38,9 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="654dp"
+        android:layout_width="404dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:background="@color/white" />
 
