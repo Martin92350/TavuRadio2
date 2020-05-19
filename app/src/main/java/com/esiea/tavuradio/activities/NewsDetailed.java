@@ -31,7 +31,7 @@ public class NewsDetailed extends AppCompatActivity {
         tvTitle = findViewById(R.id.tvTitle);
         tvSource = findViewById(R.id.tvSource);
         tvDate = findViewById(R.id.tvDate);
-        tvDesccription = findViewById(R.id.tvDescription);
+        //tvDesccription = findViewById(R.id.tvDescription);
         webView = findViewById(R.id.web);
         imageView = findViewById(R.id.image);
         webLoader = findViewById(R.id.webLoader);
@@ -41,14 +41,14 @@ public class NewsDetailed extends AppCompatActivity {
         String title = intent.getStringExtra("title");
         String source = intent.getStringExtra("source");
         String date = intent.getStringExtra("date");
-        String description = intent.getStringExtra("description");
+       // String description = intent.getStringExtra("description");
         String image = intent.getStringExtra("image");
         String url = intent.getStringExtra("url");
 
         tvTitle.setText(title);
         tvSource.setText(source);
         tvDate.setText(date);
-        tvDesccription.setText(description);
+        //tvDesccription.setText(description);
 
         Picasso.with(NewsDetailed.this).load(image).into(imageView);
 
