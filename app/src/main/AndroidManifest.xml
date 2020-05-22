@@ -8,9 +8,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/tavu_radio_logo"
+        android:icon="@drawable/logo"
         android:label="Tavu Radio"
-        android:roundIcon="@drawable/tavu_radio_logo"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">

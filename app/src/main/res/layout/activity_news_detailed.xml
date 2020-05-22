@@ -84,26 +84,6 @@
 
         </FrameLayout>
 
-            <TextView
-                android:id="@+id/tvTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/alegreya_sc_black"
-                android:padding="10dp"
-                android:text="TITLE"
-                android:textColor="#000000"
-                android:textSize="16dp" />
-
-            <TextView
-                android:id="@+id/tvDescription"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:fontFamily="@font/alegreya_sc_black"
-                android:padding="10dp"
-                android:text="Descritpion"
-                android:textColor="#9A9A9A"
-                android:textSize="12dp" />
-
 
         </LinearLayout>
 
