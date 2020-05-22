@@ -1,5 +1,6 @@
 package com.esiea.tavuradio.activities;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,8 +13,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
-
 
 import com.esiea.tavuradio.recyclerview.Adapter;
 import com.esiea.tavuradio.api.ApiClient;
@@ -38,13 +37,15 @@ import retrofit2.Response;
 public class TavuLactu extends AppCompatActivity {
 
 
-    RecyclerView recyclerView ;
-    Adapter adapter ;
+    private RecyclerView recyclerView ;
+    private RecyclerView.LayoutManager layoutManager;
+    private Adapter adapter ;
     final String API_KEY = "5761e969b23340f496da2c8560faf79d" ;
     List<Articles> articles = new ArrayList<>();
     private Button retour ;
     private SharedPreferences sharedPreferences;
-    private Gson gson ;
+    public static Gson gson ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,33 +55,18 @@ public class TavuLactu extends AppCompatActivity {
         String country = "fr" ;
         String category ="entertainment";
 
-        recyclerView = findViewById(R.id.recyclerview);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-       /* final SwipeRefreshLayout swiperefresh = findViewById(R.id.swiperefresh);
-        swiperefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                swiperefresh.setRefreshing(false);
-            }
-        });*/
-
-
-        sharedPreferences = getSharedPreferences("application radio", Context.MODE_PRIVATE);
         gson = new GsonBuilder()
                 .setLenient()
                 .create();
 
+        sharedPreferences = getBaseContext().getSharedPreferences("application radio", Context.MODE_PRIVATE);
+        articles = haveData();
 
-       /* if(haveData()!=null){
-            recyclerView = findViewById(R.id.recyclerview);
-            recyclerView.setLayoutManager(new LinearLayoutManager(this));
-            adapter = new Adapter(TavuLactu.this, articles);
-            recyclerView.setAdapter(adapter);
-        }else{
+        if(articles!=null){
+            showList(articles);
+       }else {
             retrieveJson(country, category, API_KEY);
-        }*/
-
-        retrieveJson(country, category, API_KEY);
+        }
 
         retour.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,16 +78,18 @@ public class TavuLactu extends AppCompatActivity {
         });
     }
 
-    private List<Articles> haveData() {
+    public void showList(List<Articles> articles){
 
-        String jsonArticles = sharedPreferences.getString("jsonArticles", null);
+        recyclerView = findViewById(R.id.recyclerview);
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
 
-        if(jsonArticles == null){
-            return null ;
-        }else{
-        Type listType = new TypeToken<ArrayList<Articles>>(){}.getType();
-        return gson.fromJson(jsonArticles, listType);
-        }
+
+
+        adapter = new Adapter(TavuLactu.this, articles);
+        recyclerView.setAdapter(adapter);
+
     }
 
     public void retrieveJson(String country,String category, String apiKey){
@@ -114,8 +102,7 @@ public class TavuLactu extends AppCompatActivity {
                     articles.clear();
                     articles = response.body().getArticles();
                     saveList(articles);
-                    adapter = new Adapter(TavuLactu.this, articles);
-                    recyclerView.setAdapter(adapter);
+                    showList(articles);
 
                 }
             }
@@ -128,6 +115,7 @@ public class TavuLactu extends AppCompatActivity {
 
     }
 
+    //sauvegarde de l'élément jsonString
     private void saveList(List<Articles> articles) {
 
         String jsonString = gson.toJson(articles);
@@ -136,7 +124,21 @@ public class TavuLactu extends AppCompatActivity {
                 .edit()
                 .putString("jsonArticles", jsonString)
                 .apply();
+        Toast.makeText(this, "list saved", Toast.LENGTH_SHORT).show();
 
     }
 
+    // recupère données de jsonArticles
+    private List<Articles> haveData() {
+
+        String jsonArticles = sharedPreferences.getString("jsonArticles", null);
+
+        if(jsonArticles == null){
+            return null ;
+        }else{
+            Type listType = new TypeToken<ArrayList<Articles>>(){}.getType();
+             return gson.fromJson(jsonArticles, listType);
+        }
+    }
+    public static Gson getGson() { return gson; }
 }

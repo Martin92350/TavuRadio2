@@ -28,7 +28,7 @@ public class NewsDetailed extends AppCompatActivity {
         setContentView(R.layout.activity_news_detailed);
         Intent intent = getIntent();
 
-        tvTitle = findViewById(R.id.tvTitle);
+       // tvTitle = findViewById(R.id.tvTitle);
         tvSource = findViewById(R.id.tvSource);
         tvDate = findViewById(R.id.tvDate);
         //tvDesccription = findViewById(R.id.tvDescription);
@@ -38,14 +38,14 @@ public class NewsDetailed extends AppCompatActivity {
         webLoader.setVisibility(View.VISIBLE);
 
 
-        String title = intent.getStringExtra("title");
+        //String title = intent.getStringExtra("title");
         String source = intent.getStringExtra("source");
         String date = intent.getStringExtra("date");
        // String description = intent.getStringExtra("description");
         String image = intent.getStringExtra("image");
         String url = intent.getStringExtra("url");
 
-        tvTitle.setText(title);
+        //tvTitle.setText(title);
         tvSource.setText(source);
         tvDate.setText(date);
         //tvDesccription.setText(description);
