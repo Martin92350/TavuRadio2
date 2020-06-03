@@ -36,7 +36,8 @@
                 android:id="@+id/loader"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/loader"/>
 
             <ImageView
                 android:id="@+id/image"
@@ -99,7 +100,8 @@
             android:id="@+id/webLoader"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/loader"/>
 
 
         <WebView
