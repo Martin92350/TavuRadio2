@@ -18,7 +18,8 @@ import com.squareup.picasso.Picasso;
 public class NewsDetailed extends AppCompatActivity {
 
     TextView tvTitle, tvDate, tvSource, tvDesccription ;
-    ImageView imageView, retour ;
+    ImageView imageView;
+    ImageView close ;
     ProgressBar loader, webLoader ;
     WebView webView ;
 
@@ -34,8 +35,8 @@ public class NewsDetailed extends AppCompatActivity {
         //tvDesccription = findViewById(R.id.tvDescription);
         webView = findViewById(R.id.web);
         imageView = findViewById(R.id.image);
-        retour = findViewById(R.id.retour);
-        retour.setOnClickListener(new View.OnClickListener() {
+        close = findViewById(R.id.close);
+        close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent otherActivity = new Intent(getApplicationContext(),TavuLactu.class);
