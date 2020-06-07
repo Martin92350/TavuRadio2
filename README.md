@@ -21,7 +21,7 @@ possibilité de switcher entre les deux activités (radio ou info).
 
 _Les contraintes respectées_ :
  - affichage d'une liste d'élements dans un recyclerview
- - appel d’une API Rest en ligne  pour récupérer des données que l'on veut afficher dans cette liste
+ - appel d’une API Rest en ligne  pour récupérer des données que l'on veut afficher dans la liste
  - affichage du détail d'un élément de la liste, renvoie vers page web 
  - stockage de données en cache : sauvegarde de la liste des éléments en cache lors d'une erreur de réseau
 - Gitflow 
