@@ -37,7 +37,7 @@ Autres fonctionnalités :
 
 •	Ecran de démarrage d’une durée de 2seconde   
 
-•	Ecran principale (lecteur radio + bouton « #TAVULACTU » d’accès à l’ecran de la liste)    
+•	Ecran principale (lecteur radio + bouton « #TAVUL'ACTU » d’accès à l’ecran de la liste)    
 
 •	Ecran contenant la liste d’actualité 
 
