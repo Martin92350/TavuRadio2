@@ -1,4 +1,4 @@
-# TavuRadio2
+# TavuRadio
 
 Voici l'application Tavu Radio !! Tavu Radio est une webradio qui a été créée par Anthony Montfray et Marilou Noël.
 Aller visiter leur site : https://www.tavuradio.fr/
