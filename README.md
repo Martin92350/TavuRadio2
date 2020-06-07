@@ -3,8 +3,8 @@
 Voici l'application Tavu Radio !! Tavu Radio est une webradio qui a été créée par Anthony Montfray et Marilou Noël.
 Aller visiter leur site : https://www.tavuradio.fr/
 
-L'application mobile a pour objectif de reprendre quelques éléments du site internet et de les mettre sur une application mobile, 
-pour que les auditeurs de Tavu Radio soient constamment connectés sur la radio du chat! (si vous voulez comprendre la blague,
+L'application mobile a pour objectif de reprendre quelques éléments du site internet  pour que les auditeurs de Tavu Radio 
+soient constamment connectés sur la radio du chat! (si vous voulez comprendre la blague,
 checker leur site internet!)
 
 # Utilisation
