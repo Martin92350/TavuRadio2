@@ -2,6 +2,7 @@
 The real project
 
 Présentation
+
 Voici l'application Tavu Radio !! Tavu Radio est une webradio qui a été créée par Anthony Montfray et Marilou Noël.
 Aller visiter leur site : https://www.tavuradio.fr/
 Cette application a pour objectif de reprendre quelques éléments du site internet et de les mettre sur une application mobile, 
@@ -9,6 +10,7 @@ pour que les auditeurs de Tavu Radio soient constamment connectés sur la radio 
 checker leur site internet!)
 
 Utilisation
+
 Sur cette application, l'utilisateur a le choix d'écouter de la musique via un lien stream sur la première activité de l'application. 
 Ce lien d'écoute mp3 correspond aux enregistrements faits par le studio Tavu Radio lui-même. On y retrouve des musiques super-cool
 d'aujourd'hui, des jingles, des bouts de sketch ou de one-man-show de célébrités. Néanmoins, si l'utilisateur est plutôt d'humeur à
@@ -18,6 +20,7 @@ détails, cela le renverra sur la page web, source de l'information, sur laquell
 possibilité de switcher entre les deux activités (radio ou info). 
 
 Points techniques abordés : 
+
 Les contraintes respectées :
  - affichage d'une liste d'élements dans un recyclerview
  - appel d’une API Rest en ligne  pour récupérer des données que l'on veut afficher dans cette liste
