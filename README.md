@@ -46,7 +46,8 @@ Autres fonctionnalités :
 •	Ecran de page web reprenant l’image, la source et la date de l’élément sélectionné et qui déroule tout un article sur l’actualité choisie
 
    
+# Auteur
 
- 
+Martin Noël 
  
  
