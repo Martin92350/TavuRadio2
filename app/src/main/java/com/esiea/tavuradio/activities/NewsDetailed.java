@@ -18,7 +18,7 @@ import com.squareup.picasso.Picasso;
 public class NewsDetailed extends AppCompatActivity {
 
     TextView tvTitle, tvDate, tvSource, tvDesccription ;
-    ImageView imageView ;
+    ImageView imageView, close ;
     ProgressBar loader, webLoader ;
     WebView webView ;
 
@@ -34,6 +34,7 @@ public class NewsDetailed extends AppCompatActivity {
         //tvDesccription = findViewById(R.id.tvDescription);
         webView = findViewById(R.id.web);
         imageView = findViewById(R.id.image);
+        //close = findViewById(R.id.close);
         webLoader = findViewById(R.id.webLoader);
         webLoader.setVisibility(View.VISIBLE);
 
@@ -61,6 +62,8 @@ public class NewsDetailed extends AppCompatActivity {
         if(webView.isShown()){
             webLoader.setVisibility(View.INVISIBLE);
         }
+
+
 
     }
 }
