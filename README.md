@@ -35,10 +35,10 @@ Autres fonctionnalités :
 
 Fonctionnalités :
 
-•	Icône de démarrage :   
+•	Icône de démarrage    
 
 
-•	Ecran de démarrage d’une durée de 2seconde :  
+•	Ecran de démarrage d’une durée de 2seconde   
 
 •	Ecran principale (lecteur radio + bouton « #TAVULACTU » d’accès à l’ecran de la liste)    
 
