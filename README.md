@@ -37,7 +37,7 @@ _Autres fonctionnalités_ :
 •	Icône de démarrage    
 ![image](https://user-images.githubusercontent.com/63060751/83967776-d6431b80-a8c4-11ea-85a2-582b6bdf813f.png)
 
-•	Ecran de démarrage d’une durée de 2 secondes   
+•	Ecran de démarrage d’une durée approximative de 2 secondes   
 ![image](https://user-images.githubusercontent.com/63060751/83967796-08547d80-a8c5-11ea-82b2-168d44391d98.png)
 
 •	Ecran principale (lecteur radio + bouton « #TAVUL'ACTU » d’accès à l’ecran de la liste)
