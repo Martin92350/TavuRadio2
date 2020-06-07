@@ -138,7 +138,6 @@ public class TavuLactu extends AppCompatActivity {
                 .edit()
                 .putString("jsonArticles", jsonString)
                 .apply();
-        Toast.makeText(this, "list saved", Toast.LENGTH_SHORT).show();
 
     }
 
