@@ -20,7 +20,7 @@ Points techniques abordés :
  
  - création du logo d'application Tavu Radio
  - création d'une activité pour une page d'accueil lors du démarrage de l'application
- - mis en place d'un lecteur de musique qui récupère la musique via un lien stream 
+ - mis en place d'un lecteur de musique qui récupère l'enregistrement via un lien stream 
  - affichage d'une liste d'élements à l'aide du recyclerview
  - appel à API Rest pour récupérer des données que l'on veut afficher dans cette liste
  - affichage du détail d'un élément de la liste, renvoie vers page web 
