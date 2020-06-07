@@ -14,11 +14,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp">
 
-        <Button
+        <ImageView
             android:id="@+id/retour"
             android:layout_width="50dp"
             android:layout_height="36dp"
-            android:text="Button" />
+            android:src ="@drawable/ic_keyboard_return_black_24dp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -26,8 +26,9 @@
             android:layout_height="35dp"
             android:layout_row="0"
             android:layout_column="1"
-            android:text="#L ' ACTU"
             android:fontFamily="@font/alegreya_sc_black"
+            android:text="L ' ACTU"
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="20dp" />
 

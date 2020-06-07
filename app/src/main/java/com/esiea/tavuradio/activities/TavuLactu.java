@@ -11,6 +11,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
@@ -38,11 +39,12 @@ public class TavuLactu extends AppCompatActivity {
 
 
     private RecyclerView recyclerView ;
+    private SwipeRefreshLayout swipeRefreshLayout ;
     private RecyclerView.LayoutManager layoutManager;
     private Adapter adapter ;
     final String API_KEY = "5761e969b23340f496da2c8560faf79d" ;
     List<Articles> articles = new ArrayList<>();
-    private Button retour ;
+    private ImageView retour ;
     private SharedPreferences sharedPreferences;
     public static Gson gson ;
 
@@ -51,9 +53,9 @@ public class TavuLactu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tavu);
-        this.retour = (Button) findViewById(R.id.retour);
-        String country = "fr" ;
-        String category ="entertainment";
+        this.retour =  findViewById(R.id.retour);
+        final String country = "fr" ;
+        final String category ="entertainment";
 
         gson = new GsonBuilder()
                 .setLenient()
@@ -76,9 +78,19 @@ public class TavuLactu extends AppCompatActivity {
                 finish();
             }
         });
+
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                retrieveJson(country, category, API_KEY);
+            }
+        });
     }
 
     public void showList(List<Articles> articles){
+
+        swipeRefreshLayout = findViewById(R.id.swiperefresh);
+
 
         recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setHasFixedSize(true);
@@ -94,11 +106,13 @@ public class TavuLactu extends AppCompatActivity {
 
     public void retrieveJson(String country,String category, String apiKey){
 
+        swipeRefreshLayout.setRefreshing(true);
         Call<Headlines> call = ApiClient.getInstance().getApi().getHeadlines(country, category, apiKey);
         call.enqueue(new Callback<Headlines>() {
             @Override
             public void onResponse(Call<Headlines> call, Response<Headlines> response) {
                 if(response.isSuccessful() && response.body().getArticles()!=null){
+                    swipeRefreshLayout.setRefreshing(false);
                     articles.clear();
                     articles = response.body().getArticles();
                     saveList(articles);

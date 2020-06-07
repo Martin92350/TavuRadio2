@@ -32,18 +32,34 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tavu_radio_logo" />
 
-    <Button
-        android:id="@+id/Play"
-        android:layout_width="76dp"
-        android:layout_height="42dp"
-        android:text="PLAY"
-        android:background="#fefefe"
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LogoTavuRadio"
-        app:layout_constraintVertical_bias="0.225" />
+        app:layout_constraintVertical_bias="0.129"
+        tools:ignore="MissingConstraints">
 
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/loader"
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="496dp"
+        tools:ignore="MissingConstraints" />
 
+        <ImageView
+            android:id="@+id/Play"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_play_circle"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="486dp" />
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
