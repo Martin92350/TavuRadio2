@@ -19,14 +19,14 @@ possibilité de switcher entre les deux activités (radio ou info).
 
 # Points techniques abordés : 
 
-_Les contraintes respectées :
+_Les contraintes respectées_ :
  - affichage d'une liste d'élements dans un recyclerview
  - appel d’une API Rest en ligne  pour récupérer des données que l'on veut afficher dans cette liste
  - affichage du détail d'un élément de la liste, renvoie vers page web 
  - stockage de données en cache : sauvegarde de la liste des éléments en cache lors d'une erreur de réseau
 - Gitflow 
 
-_Autres fonctionnalités :
+_Autres fonctionnalités_ :
 - mis en place d'un lecteur de musique qui récupère l'enregistrement via un lien stream
 - création du logo d'application Tavu Radio
  - création d'une activité pour une page d'accueil lors du démarrage de l'application 
